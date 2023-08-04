@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .content {
+        height: 500px;
+        width: 600px;
+      }
+      .header, .footer {
+        height: 80px;
+        background-color: #f88f0f;
+      }
+      .flexbox {
+        display: flex;
+        height: 340px;
+      }
+      .section{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 9;
+      }
+      .side{
+        background-color: rgb(130, 176, 36);
+        flex-grow: 1;
+      }
+      .main{
+        background-color: aqua;
+        flex-grow: 9;
+      }
+
+      .article1{
+        background-color: antiquewhite;
+        flex-grow: 1;
+      }
+      .article2{
+        background-color: salmon;
+        flex-grow: 1;
+      }
+      .article3{
+        background-color: yellow;
+        flex-grow: 1;
+      }
+      .articles{
+        display: flex;
+        flex-grow: 1;
+      }
+      
+      .fixed{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: brown;
+        margin : 0;
+
+
+        position: fixed;
+        right: 50px;
+        top : 50px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="header">상단</div>
+      <div class="flexbox">
+        <div class="section">
+          <div class="main">메인</div>
+          <div class="articles">
+            <div class="article1">article1</div>
+            <div class="article2">article2</div>
+            <div class="article3">article3</div>
+          </div>
+        </div>
+        <div class="side">사이드</div>
+      </div>
+      <div class="footer">하단</div>
+    </div>
+
+    <div class="fixed">fixed</div>
+  </body>
+</html>

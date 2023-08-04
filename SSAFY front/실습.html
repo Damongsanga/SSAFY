@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+         font-weight: 600;
+        }
+      .flex-container {
+        display: flex;
+        width: 500px;
+        height: 400px;
+        flex-direction: column;
+      }
+
+      .flex-container > div:nth-child(2) {
+        flex-grow: 1;
+      }
+
+      .inner {
+        display: flex;
+        align-items: stretch;
+      }
+
+      .flex-innercontainer {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+      }
+
+      .headtail {
+        width: 100%;
+        background-color: coral;
+        height: 10%;
+      }
+
+      .flex-articlecontainer {
+        height: 20%;
+        display: inline-flex;
+      }
+      .article{
+        width:33.3333333333333%;
+      }
+
+      .sidebox{
+        width : 20%;
+        justify-content: flex-end;
+      }
+      .main{
+        height: 100%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="headtail">상단</div>
+      <div class="inner">
+        <div class="flex-innercontainer">
+          <div class="main" style="background-color: #3dd8d0">메인</div>
+          <div class="flex-articlecontainer">
+            <div class="article" style="background-color: #98e491">article1</div>
+            <div class="article" style="background-color: #c49fee">article2</div>
+            <div class="article" style="background-color: #dc7676">article3</div>
+          </div>
+        </div>
+        <div class="sidebox" style="background-color: #f88f0f">사이드</div>
+      </div>
+      <div class="headtail">하단</div>
+    </div>
+  </body>
+</html>
