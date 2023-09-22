@@ -1,0 +1,117 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+
+body { 
+    background-color: violet;
+}
+
+a {
+    color : black; text-decoration: none;
+}
+
+.container{
+    width : 80%;
+    margin : 0 auto;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height : 20vh;
+    margin-top: 20px;
+}
+
+.icon {
+    margin : 13px;
+    width : 200px;
+    display: flex;
+}
+
+.menubar ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items : center;
+}
+
+.menubar ul li {
+    margin : 10px;
+    padding : 10px;
+}
+
+.signButton > button {
+    margin : 15px;
+    width : 60px;
+    height : 30px;
+    border : 0;
+    border-radius: 5px;
+    background-color: pink;
+}
+
+.signButton > button:hover {
+    background-color: magenta;
+}
+
+.main {
+    height : 80vh;
+    display : flex;
+    flex-direction: row;
+}
+
+.main *{
+    margin-bottom: 20px;
+}
+
+.left{
+    width : 50%;
+    margin-left : 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    width: 40vh;
+}
+.text h5 {
+    color: black;
+    font-size: 2em;
+}
+.text h2 {
+    color: darkmagenta;
+    font-size: 1.5em;
+}
+
+.main button {
+    margin : 10px;
+    width : 100px;
+    height : 45px;
+    border : 0;
+    border-radius: 5px;
+    background-color: pink;
+    font-size : 1em;
+}
+
+.main button:hover {
+    background-color: magenta;
+}
+
+.right{
+    width : 50%;
+    margin-right : 50px;
+    display: flex;
+
+}
+
+.right h1{
+    flex-grow: 1;
+}
+
+.right img {
+    justify-self: center;
+    height : 50vh;
+    width : 50vh;
+}
