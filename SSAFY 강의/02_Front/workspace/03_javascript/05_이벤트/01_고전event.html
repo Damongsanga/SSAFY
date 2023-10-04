@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- attribute -->
+    <!-- 태그의 attribute -->
+    <button onclick="alert('Hello')">Hi</button>
+    <button id="btn">버튼</button>
+
+    <script>
+      function doAction(){
+        for(let i=0; i<10; i++){
+          console.log(i);
+        }
+      }
+
+      // property: 객체의 속성
+      let btn = document.getElementById("btn");
+      btn.onclick = doAction;
+
+    </script>
+  </body>
+  
+</html>

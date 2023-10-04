@@ -1,0 +1,61 @@
+package com.ssafy.board.model.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.ssafy.board.model.dto.Board;
+
+public class BoardDaoImpl implements BoardDao {
+
+	private static BoardDao dao = new BoardDaoImpl();
+
+	private List<Board> list = new ArrayList<>(); //데이터 베이스 대신
+
+	private BoardDaoImpl() {
+		list.add(new Board("오늘 너무 어렵다." , "이민지", "따라치기 포기야.."));
+		list.add(new Board("오늘 좀 빠른데?" , "조용환", "자체 0.8배속으로 간다."));
+		list.add(new Board("밥먹고 싶다.." , "김태윤", "점메추 제	ㅏㄹ요"));
+		
+	}
+
+	public static BoardDao getInstance() {
+		return dao;
+	}
+
+	@Override
+	public List<Board> selectAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void insertBoard(Board board) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Board selectOne(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void updateBoard(Board board) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteBoard(int id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void updateViewCnt(int id) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

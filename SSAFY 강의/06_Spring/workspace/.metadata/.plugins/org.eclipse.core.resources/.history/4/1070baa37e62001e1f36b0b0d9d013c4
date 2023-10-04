@@ -1,0 +1,9 @@
+package com.ssafy.mvc.interceptor;
+
+//얘를 인터셉터로 만들기 위해서는 
+//1. 구현
+//2. 상속
+
+public class AInterceptor {
+
+}

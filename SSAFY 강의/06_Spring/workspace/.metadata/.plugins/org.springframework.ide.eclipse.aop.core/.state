@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="Spring_Day03_MyMVC"/>
+<aop-project name="Spring_Day01_DI_2_시작하기"/>
+<aop-project name="Spring_Day01_DI_4_Annotation"/>
+<aop-project name="Spring_Day01_DI_3_XML"/>
+<aop-project name="Spring_Day02_AOP_3_Annotation">
+<aspect-definition advice-class-name="com.ssafy.aop.MyAspect" advice-method-name="around(org.aspectj.lang.ProceedingJoinPoint)" advice-type="AROUND" aspect-end-line-number="11" aspect-name="myAspect" aspect-start-line-number="11" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/Spring_Day02_AOP_3_Annotation/resources/applicationContext.xml" pointcut-expression="mypt()" proxy-target-class="true">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:Spring_Day02_AOP_3_Annotation|3:resources/applicationContext.xml|7:beans:8|8:ssafy:8" bean-file="/Spring_Day02_AOP_3_Annotation/resources/applicationContext.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/Spring_Day02_AOP_3_Annotation/resources/applicationContext.xml" source="=Spring_Day02_AOP_3_Annotation/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.aop{MyAspect.java[MyAspect~around~QProceedingJoinPoint;" source-start-line="45" target="=Spring_Day02_AOP_3_Annotation/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.aop{Ssafy.java[Ssafy~coding" target-start-line="12"/>
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:Spring_Day02_AOP_3_Annotation|3:resources/applicationContext.xml|7:beans:8|8:programmer:8" bean-file="/Spring_Day02_AOP_3_Annotation/resources/applicationContext.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/Spring_Day02_AOP_3_Annotation/resources/applicationContext.xml" source="=Spring_Day02_AOP_3_Annotation/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.aop{MyAspect.java[MyAspect~around~QProceedingJoinPoint;" source-start-line="45" target="=Spring_Day02_AOP_3_Annotation/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.aop{Programmer.java[Programmer~coding" target-start-line="13"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="Test"/>
+<aop-project name="Spring_Day04_Interceptor"/>
+<aop-project name="Spring_Day02_AOP_2_XML">
+<aspect-definition advice-class-name="com.ssafy.aop.MyAspect" advice-method-name="around" advice-type="AROUND" aspect-end-line-number="21" aspect-name="myAspect" aspect-start-line-number="21" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/Spring_Day02_AOP_2_XML/resources/applicationContext.xml" pointcut-expression="execution(public * com.ssafy.aop.*.coding())" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:Spring_Day02_AOP_2_XML|3:resources/applicationContext.xml|7:beans:6|8:programmer:10" bean-file="/Spring_Day02_AOP_2_XML/resources/applicationContext.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/Spring_Day02_AOP_2_XML/resources/applicationContext.xml" source="=Spring_Day02_AOP_2_XML/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.aop{MyAspect.java[MyAspect~around~QProceedingJoinPoint;" source-start-line="30" target="=Spring_Day02_AOP_2_XML/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.aop{Programmer.java[Programmer~coding" target-start-line="10"/>
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:Spring_Day02_AOP_2_XML|3:resources/applicationContext.xml|7:beans:6|8:ssafy:11" bean-file="/Spring_Day02_AOP_2_XML/resources/applicationContext.xml" bean-start-line="11" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/Spring_Day02_AOP_2_XML/resources/applicationContext.xml" source="=Spring_Day02_AOP_2_XML/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.aop{MyAspect.java[MyAspect~around~QProceedingJoinPoint;" source-start-line="30" target="=Spring_Day02_AOP_2_XML/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.aop{Ssafy.java[Ssafy~coding" target-start-line="9"/>
+</aspect-definition>
+</aop-project>
+</aop-reference-model>

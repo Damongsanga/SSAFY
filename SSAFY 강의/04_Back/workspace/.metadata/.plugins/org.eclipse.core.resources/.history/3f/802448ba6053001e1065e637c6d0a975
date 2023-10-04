@@ -1,0 +1,39 @@
+package com.ssafy.board.controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/board")
+public class BoardController extends HttpServlet {
+
+	@Override
+	protected void service(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		
+		//GET요청에서는 안했지만 POST 요청에서는 인코딩 방식을 바꿔~
+		if(request.getMethod().equals("POST"))
+			request.setCharacterEncoding("UTF-8");
+		
+		
+		String act = request.getParameter("act");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

@@ -1,0 +1,23 @@
+package com.ssafy.board.model.dto;
+
+public class Board {
+	private static int no = 1; //클래스 변수
+	private int id;
+	private String title;
+	private String writer;
+	private String content;
+	private String regDate;
+	private int viewCnt;
+
+	public Board() {
+	}
+
+	public Board(String title, String writer, String content) {
+		super();
+		this.id = no++;
+		this.title = title;
+		this.writer = writer;
+		this.content = content;
+	}
+
+}

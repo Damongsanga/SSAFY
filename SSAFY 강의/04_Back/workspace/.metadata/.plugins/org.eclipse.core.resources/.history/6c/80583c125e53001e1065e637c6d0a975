@@ -1,0 +1,10 @@
+package com.ssafy.board.model.dto;
+
+public class Board {
+	private int id;
+	private String title;
+	private String writer;
+	private String content;
+	private String regDate;
+	private int viewCnt;
+}

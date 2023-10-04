@@ -1,0 +1,11 @@
+package com.ssafy.mvc.interceptor;
+
+import org.springframework.web.servlet.HandlerInterceptor;
+
+//얘를 인터셉터로 만들기 위해서는 
+//1. 구현 : implements HandlerInterceptor
+//2. 상속 : 
+
+public class AInterceptor implements HandlerInterceptor {
+
+}

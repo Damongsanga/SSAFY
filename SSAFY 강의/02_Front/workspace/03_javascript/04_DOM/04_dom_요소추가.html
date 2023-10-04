@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="parent"></div>
+    <script>
+      let img = document.createElement("img");
+      let parent = document.getElementById("parent");
+      parent.appendChild(img);
+      img.setAttribute("src", "./images/burger.jpg");
+      img.setAttribute("width", "200px");
+      img.setAttribute("msg", "haha");
+      img.setAttribute("msg", "hoho");
+
+      img.msg = "hoho";
+
+      let img2 = document.createElement("img");
+      parent.appendChild(img2);
+      img2.src="./images/burger.jpg";
+      img2.width = 200;
+      img2.msg = "hihi";
+
+
+      let h1 = document.createElement("h1");
+      parent.appendChild(h1);
+      let textNode = document.createTextNode("안녕하세요!");
+      h1.appendChild(textNode);
+      h1.innerText = "Hello";
+      h1.innerHTML = "<div>나는 div 태그</div>"; // html 코드로 추가
+      h1.innerText = "<div>나는 div 태그</div>"; // text로 추가
+
+    </script>
+  </body>
+</html>

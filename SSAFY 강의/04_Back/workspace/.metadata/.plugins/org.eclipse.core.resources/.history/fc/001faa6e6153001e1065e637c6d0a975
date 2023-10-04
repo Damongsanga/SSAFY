@@ -1,0 +1,13 @@
+package com.ssafy.board.model.service;
+
+public interface BoardService {
+	// 게시글 전체 조회
+
+	// 게시글 등록
+
+	// 게시글 상세 조회
+
+	// 게시글 수정
+
+	// 게시글 삭제
+}

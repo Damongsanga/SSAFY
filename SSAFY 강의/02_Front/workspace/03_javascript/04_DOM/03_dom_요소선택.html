@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .a {
+        color: red;
+      }
+
+      .b {
+        background-color: yellow !important;
+      }
+
+      .d {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>테스트</h2>
+      <div id="a" class="a b">지역</div>
+      <p class="b">서울</p>
+      <p name="c">대전</p>
+      <div class="d b">광주</div>
+      <div name="e">구미</div>
+      <p class="e">부울경</p>
+    </section>
+    <script>
+      // getElementById
+      // let a = document.getElementById("a");
+      // console.log(a);
+      // a.style.color = "green";
+
+      // // getElementsByClassName
+      let b = document.getElementsByClassName("b");
+      // console.log(b);
+      // for(let i=0; i< b.length; i++){
+      //   b[i].style.color = "red";
+      // }
+
+      // // querySelector
+      // let e = document.querySelector(".e");
+      // e.style.background = "blue";
+
+      let b2 = document.querySelectorAll(".b");
+      // for(let i=0; i< b2.length; i++){
+      //   b2[i].style.background = "yellow";
+      // }
+
+      
+    </script>
+  </body>
+</html>

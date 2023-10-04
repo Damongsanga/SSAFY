@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Window 객체</title>
+  </head>
+  <body>
+    <script>
+      // 전역 객체(최상위 객체): window
+      // window === this
+      // window === self
+      // window === frames
+
+      // globalThis : 전역 객체 식별자(ES2020)
+
+      console.log(this === globalThis);
+      console.log(self === globalThis);
+      console.log(window === globalThis);
+      console.log(frames === globalThis);
+
+      // frames.alert("나는 전역 객체");
+      // window.alert("내가 전역 객체");
+      // alert("나도 전역 객체");
+      // window. 은 생략이 되어 있다
+
+      // let a = window.confirm("맞으면 확인"); // true or false
+      // console.log(a);
+      // if(a){
+      //   alert("확인을 눌렀습니다.")
+      // } else {
+      //   alert("취소를 눌렀습니다.")
+      // }
+
+      // window.open("http://naver.com", "_blank"); // 새 탭으로 열기
+      // window.open("http://naver.com", "_self"); // 기존 탭에서 열기
+      
+      window.setTimeout(function(){
+        console.log("3초 후")
+      }, 3000)
+    
+    </script>
+  </body>
+</html>

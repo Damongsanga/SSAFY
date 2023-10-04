@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;Spring_Day02_AOP_Proxy&apos; to &apos;Spring_Day02_AOP_1_Proxy&apos;&#x0D;&#x0A;- Original element: &apos;Spring_Day02_AOP_Proxy&apos;&#x0D;&#x0A;- Renamed element: &apos;Spring_Day02_AOP_Proxy&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;Spring_Day02_AOP_Proxy&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=Spring_Day02_AOP_Proxy" name="Spring_Day02_AOP_1_Proxy" references="true" stamp="1694562114192" version="1.0"/>
+</session>

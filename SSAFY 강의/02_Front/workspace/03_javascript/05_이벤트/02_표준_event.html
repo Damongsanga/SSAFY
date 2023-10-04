@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">버튼</button>
+    <a href="https://edu.ssafy.com">싸피</a>
+
+    <script>
+      let btn = document.querySelector("#btn");
+      btn.addEventListener("click", doAction);
+
+      function doAction(){
+        alert("click!");
+      }
+
+      // eventHandler는 매개변수 event 객체를 받을
+      // 있음
+      let a = document.querySelector("a");
+      a.addEventListener("click", function(event){
+        event.preventDefault();
+        console.log(event);
+        alert("나는 다른 행동을 하고 싶어.....");
+      })
+
+
+    </script>
+  </body>
+</html>

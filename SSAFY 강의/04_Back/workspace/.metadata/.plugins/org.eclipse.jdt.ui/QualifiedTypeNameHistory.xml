@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.servlet.Servlet"/>
+<fullyQualifiedTypeName name="javax.servlet.GenericServlet"/>
+<fullyQualifiedTypeName name="javax.security.auth.message.callback.PrivateKeyCallback.Request"/>
+<fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
+<fullyQualifiedTypeName name="com.ssafy.dto.Person"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+<fullyQualifiedTypeName name="com.sun.accessibility.internal.resources.accessibility"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.ssafy.board.model.service.BoardService"/>
+<fullyQualifiedTypeName name="com.ssafy.board.model.service.BoardServiceImpl"/>
+<fullyQualifiedTypeName name="com.ssafy.board.model.dao.BoardDao"/>
+<fullyQualifiedTypeName name="com.ssafy.board.model.dto.Board"/>
+<fullyQualifiedTypeName name="com.ssafy.board.model.dao.BoardDaoImpl"/>
+</qualifiedTypeNameHistroy>

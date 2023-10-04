@@ -1,0 +1,10 @@
+package com.ssafy.board.controller;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+
+@WebServlet("/board")
+public class BoardController extends HttpServlet{
+
+}
