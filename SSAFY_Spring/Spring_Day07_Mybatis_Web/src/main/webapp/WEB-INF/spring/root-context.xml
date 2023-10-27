@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+	xsi:schemaLocation="http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<!-- dataSource 가지고와서 bean으로 등록하자 -->
+	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
+		<property name="url" value="jdbc:mysql://localhost:3306/ssafy_board?serverTimezone=UTC"/>
+		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+		<property name="username" value="ssafy"/>
+		<property name="password" value="ssafy"/>
+	</bean>
+	
+	<!-- sqlSessionFactoryBean 등록하자 -->
+	<bean id ="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"/> <!-- 여기서  name은 setter 이름, ref는 위에 등록한 bean! -->
+		<property name="mapperLocations" value="classpath*:mappers/*.xml"/> <!-- 경로에 있는 xml 아래 있는 모든 mapper 들을 등록 -->
+		<property name="typeAliasesPackage" value="com.ssafy.board.model.dto"/> <!-- typeAlias 등록 -->
+	</bean>
+	
+	<!-- namespace에서 등록하자! -->
+	<mybatis-spring:scan base-package="com.ssafy.board.model.dao"/>
+	<context:component-scan base-package="com.ssafy.board.model"/>
+
+</beans>
